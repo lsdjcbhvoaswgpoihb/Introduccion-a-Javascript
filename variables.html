@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>variables</title>
+</head>
+<body>
+  <script>
+    /*var let const*/
+    let nombre = 'fabri';
+    let edad = 18;
+    document.write(nombre);
+    document.write('<br>');
+    document.write('edad');
+
+    /*
+    para introducir datos por parte del usuario se puede utilizar el parametro 'prompt' 
+    si sintaxis es la siguiente 
+    let variable ejemplo = window.prompt(mensaje,valor por defecto):
+    */
+
+    nombre = window.prompt('ingresa tu primer nombre: ', 'no se ha ingresado ningun nombre');
+    edad = window.prompt('ingresa tu edad: ','');
+    document.write('<br>');
+    document.write('mucho gusto ', nombre);
+    document.write('<br>');
+    document.write('me sorprende que tengas ', edad, ' 18 años de edad.');
+
+    /*
+    para solicitar confirmaciones al ususario se puede usar el parametro 'confirm',
+    su sintaxis es la siguiente:
+    let confirmacion = windows.confirm(mensaje);
+    */
+    let relacion = 'novia';
+    let mensaje = 'soy danila quieres ser mi amiga?' + relacion;
+    let confirmacion = windows.confirm(mensaje);
+    console.log(confirmacion);
+    if(confirmacion){
+      document.write('<br>');
+      document.write(nombre, 'es un gusto que podamos ser ', relacion, 's'.);
+    }else{
+      document.write('<br>');
+      document.write(nombre, ',es una lastima que no andaramos');
+    }
+
+    /*
+    tipos de datos en js:
+    number
+    string
+    boolean
+    valores especiales null and undefined
+    symbol
+    bigint (para valores que superen el tamaño de number)
+    object la mujer
+    */
+  
+    </script>
+</body>
+</html>
