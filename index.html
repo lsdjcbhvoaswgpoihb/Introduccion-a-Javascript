@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro JS</title>
+    
+    <link rel="stylesheet" href="micss.css">
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <script type="text/Javascript">
+    document.write("Escrito desde javascript");
+    /* Eto es un comentario en js*/
+    </script>
+    <p class="tipografia">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas, magnam laudantium, illum saepe mollitia rem fugit repudiandae obcaecati hic nesciunt commodi ex corrupti autem perferendis pariatur unde corporis necessitatibus!</p>
+    <script type="text/javascript">
+    document.write('<br>');
+    </script>
+    <p class="tipografia2" id="idparrafo">
+    buenas que tal ?
+    </p>
+
+    <script type="text/javascript">
+        document.write('este texto debe aparecer en la parte superior');
+        deocument.write('<br>')
+        document.write('este texto debe aparecer en la parte de abajo');
+    </script>
+
+    <h2>Prueba de JS con botones</h2>
+    <button class="btn btn-primary"   type="button"
+    onclick="saludo()">
+    haz un click aqui
+    </button>
+
+    <script>
+       
+    function saludo(){
+     /**window.alert('hola desde alertJs');*/
+     document.getElementById("idparrafo").innerHTML = "sorpresa"; 
+     console.log('el elemento p fue modificado')
+    }
+    </script>
+
+
+</body>
+
+</html>
